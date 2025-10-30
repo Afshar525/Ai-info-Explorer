@@ -1,0 +1,132 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #58a6ff;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.header input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    background-color: #161b22;
+    color: #f0f6fc;
+    outline: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.header input:focus {
+    border-color: #58a6ff;
+}
+
+/* FILTER BUTTONS */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 9px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.filters button:hover {
+    background: #58a6ff;
+    color: white;
+}
+
+.filters .active {
+    background: #58a6ff;
+    color: white;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 18px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.05);
+}
+
+.card:hover {
+    border-color: #58a6ff;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #58a6ff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card p {
+    color: #c9d1d9;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.card span {
+    background: #58a6ff;
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 9px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #8b949e;
+    text-align: center;
+}

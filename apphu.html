@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Info Explorer – Smart Search Dashboard</title>
+    <link rel="stylesheet" href="apphu.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>🤖 AI Info Explorer</h1>
+        <input type="text" id="search" placeholder="Search topics...">
+    </header>
+
+    <section class="filters">
+        <button class="active" data-category="all">All</button>
+        <button data-category="technology">Technology</button>
+        <button data-category="science">Science</button>
+        <button data-category="health">Health</button>
+        <button data-category="business">Business</button>
+        <button data-category="education">Education</button>
+    </section>
+
+    <main id="cardsContainer" class="cards"></main>
+
+    <footer>
+        <p>Made with ❤️ by Afshar</p>
+    </footer>
+
+    <script src="apphu.js"></script>
+</body>
+
+</html>
